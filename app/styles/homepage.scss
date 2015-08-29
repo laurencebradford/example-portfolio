@@ -1,14 +1,28 @@
 .homepage {
 	padding-bottom: 40px;
+	img {
+		width: 100%;
+		height: auto;
+	}
 	section {
 		padding: 20px 0px;
 	}
-
 	.hp {
 	  margin: 40px 0;
-	  // p + h3 {
-	  //   margin-top: 28px;
-	  // }
+	}
+	.featured {
+		background: url("/images/pondering.jpg") no-repeat center;
+		background-size: cover;
+		// height: 500px;
+		padding: 150px 50px 150px 50px;
+		color: white;
+		border-radius: 10px;
+		h4 {color: white !important; font-size: 2em;}
+		h5 {
+			color: white !important;
+			font-size: 1.2em;
+			text-transform: uppercase;
+		}
 	}
 	
 }

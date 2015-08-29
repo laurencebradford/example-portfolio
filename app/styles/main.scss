@@ -1,5 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300);
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -15,19 +15,19 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.6em;
+  color: #9A9A9A;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-/* make font bigger */
-p {
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif";
+  color: #444 !important;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
@@ -35,11 +35,46 @@ p {
   padding-right: 15px;
 }
 
-/* Custom page header */
+.container {
+  width: 960px;
+  margin: 0 auto;
+  @media (max-width: 960px) {
+    width: auto;
+  }
+}
+
+$btn-transparent-bg: transparent;
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-portfolio {
+  background: #61C9A8;
+  border-color: transparent;
+  // color: rgba(0,0,0,0.4);
+  color: white;
+  box-shadow: 0px 3px 0px #3AB58E;
+
+  &:hover, &:active, &:focus {
+    color: white;
+    background-color: darken(#61C9A8,5%);
+  }
+}
+
+.btn-portfolio-readmore {
+  background: #DB5461;
+  color: white;
+  box-shadow: 0px 3px 0px darken(#DB5461, 10%);
+  &:hover, &:active, &:focus {
+    background-color: darken(#DB5461, 5%);
+    color: white;
+  }
+}
+
 .header {
   border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -54,7 +89,6 @@ p {
   }
 }
 
-/* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
@@ -65,37 +99,51 @@ p {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
+  background: transparent;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
-    font-size: 21px;
+    // font-size: 21px;
     padding: 14px 24px;
   }
 }
 
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
   .header,
   .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
   }
-
-  /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
 }
+
+.nav-pills {
+  li {
+    a {
+      color: #444;
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+  li.active {
+    > a {
+      background-color: transparent;
+      color: #444;
+      text-decoration: underline;
+      font-weight: bold;
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
