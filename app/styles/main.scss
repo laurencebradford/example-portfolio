@@ -18,7 +18,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 1.6em;
+  font-size: 1.8em;
   color: #9A9A9A;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -89,6 +89,53 @@ $btn-transparent-bg: transparent;
   }
 }
 
+.thumbnail-outlined {
+  padding: 5px;
+  background-color: #EAEAEA;
+  // box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  // transition: box-shadow 0.1s linear;
+  // &:hover {
+  //   box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  // }
+}
+
+.featured {
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    .scrum {
+      background: rgba(0,0,0,0.8);
+    }
+  }
+  .scrum {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    transition: background 0.2s linear;
+    z-index: 1;
+
+  }
+  .wrapped {
+    position: relative;
+    z-index: 2;
+  }
+  background: url("/images/tbpr.png") no-repeat center;
+  background-size: cover;
+  // height: 500px;
+  padding: 150px 50px 150px 50px !important;
+  color: white;
+  border-radius: 10px;
+  h4 {color: white !important; font-size: 2em;}
+  h5 {
+    color: white !important;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+}
+
 .footer {
   padding-top: 19px;
   color: #777;
@@ -140,8 +187,9 @@ $btn-transparent-bg: transparent;
       color: #444;
       text-decoration: underline;
       font-weight: bold;
-      &:hover, &:focus {
+      &:hover, &:focus, &:active {
         background-color: transparent;
+        color: #444;
       }
     }
   }
