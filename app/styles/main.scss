@@ -8,6 +8,14 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "./projects";
 @import "./about";
 
+// color-vars 
+$lt-gray: #797777;
+$dk-gray: #444;
+$seafoam: #61C9A8;
+$pink: #DB5461;
+$purp: #496DDB;
+
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -19,13 +27,20 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.8em;
-  color: #9A9A9A;
+  color: $lt-gray;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bree Serif";
-  color: #444 !important;
+  color: $dk-gray !important;
+}
+
+a {
+  color: $purp;
+  &:hover, &:active, &:focus {
+    color: darken($purp, 10%);
+  }
 }
 
 .header,
@@ -43,15 +58,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.underline {
+  border-bottom: solid $seafoam 5px;
+  padding-bottom: 5px;
+}
+
+
+
 $btn-transparent-bg: transparent;
 
+
 .btn {
+  margin-top: 5px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .btn-portfolio {
-  background: #61C9A8;
+  background: $seafoam;
   border-color: transparent;
   // color: rgba(0,0,0,0.4);
   color: white;
@@ -59,12 +83,12 @@ $btn-transparent-bg: transparent;
 
   &:hover, &:active, &:focus {
     color: white;
-    background-color: darken(#61C9A8,5%);
+    background-color: darken($seafoam,5%);
   }
 }
 
 .btn-portfolio-readmore {
-  background: #DB5461;
+  background: $pink;
   color: white;
   box-shadow: 0px 3px 0px darken(#DB5461, 10%);
   &:hover, &:active, &:focus {
@@ -75,64 +99,50 @@ $btn-transparent-bg: transparent;
 
 .header {
   border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0px;
+  @media (max-width: $screen-sm) { 
+     border-bottom: none;
+  }
+  .menu {
+    @media (max-width: $screen-sm) { 
+     font-size: .9em;
+    }
+  }
   h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
+  }
+  .logo {
+    a {color: #DB5461;}
+    
   }
   .contact {
-    padding: 20px 0px;
+    padding-bottom: 20px;
+    padding-top: 5px;
     li {
       margin-right: 15px;
     }
-  }
+    @media (max-width: $screen-sm) { 
+      font-size: .9em;
+    }
+  } // .contact
+  
 }
 
 .thumbnail-outlined {
   padding: 5px;
   background-color: #EAEAEA;
-  // box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  // transition: box-shadow 0.1s linear;
-  // &:hover {
-  //   box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
-  // }
 }
 
-.featured {
-  position: relative;
-  overflow: hidden;
-  &:hover {
-    .scrum {
-      background: rgba(0,0,0,0.8);
-    }
+.hp-featured {
+  margin: 60px 0px;
+  .description {
+    margin: 50px;
   }
-  .scrum {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.6);
-    transition: background 0.2s linear;
-    z-index: 1;
-
-  }
-  .wrapped {
-    position: relative;
-    z-index: 2;
-  }
-  background: url("/images/tbpr.png") no-repeat center;
-  background-size: cover;
-  // height: 500px;
-  padding: 150px 50px 150px 50px !important;
-  color: white;
-  border-radius: 10px;
-  h4 {color: white !important; font-size: 2em;}
-  h5 {
-    color: white !important;
-    font-size: 1.2em;
-    text-transform: uppercase;
+  h4 {
+    margin-bottom: 40px;
+    font-size: 2em;
   }
 }
 
@@ -149,9 +159,7 @@ $btn-transparent-bg: transparent;
 .jumbotron {
   background: transparent;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
   .btn {
-    // font-size: 21px;
     padding: 14px 24px;
   }
 }
@@ -174,7 +182,7 @@ $btn-transparent-bg: transparent;
 .nav-pills {
   li {
     a {
-      color: #444;
+      color: $dk-gray;
       &:hover {
         background-color: transparent;
         text-decoration: underline;
@@ -184,12 +192,12 @@ $btn-transparent-bg: transparent;
   li.active {
     > a {
       background-color: transparent;
-      color: #444;
+      color: $dk-gray;
       text-decoration: underline;
       font-weight: bold;
       &:hover, &:focus, &:active {
         background-color: transparent;
-        color: #444;
+        color: $dk-gray;
       }
     }
   }
