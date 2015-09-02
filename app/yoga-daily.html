@@ -32,24 +32,31 @@
     
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./projects.html">My Work</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
-        <h3 class="text-muted">Laura Bradshaw</h3>
-        <ul class="nav nav-pills contact">
-          <li>laura@laurabradshaw.com</li>
-          <li><i class="fa fa-linkedin fa-lg"></i></li>
-          <li><i class="fa fa-github fa-lg"></i></li>
-          <li><i class="fa fa-twitter fa-lg"></i></li>
-        </ul>
+        <div class="row">
+          <div class="col-sm-7">
+            <h3 class="logo"><a href="./index.html">Laura Bradshaw</a></h3>
+              <ul class="nav nav-pills contact">
+                <li>laura@laurabradshaw.com</li>
+                <li><i class="fa fa-linkedin fa-lg"></i></li>
+                <li><i class="fa fa-github fa-lg"></i></li>
+                <li><i class="fa fa-twitter fa-lg"></i></li>
+              </ul>
+          </div>
+          <div class="col-sm-5">
+              <ul class="menu nav nav-pills pull-right">
+              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./projects.html">My Work</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
       </div> <!--header-->
+   
       <div id="case-study">
         <div class="jumbotron">
           <h1>Yoga Daily</h1>
           <p class="lead">
-            Custom built WordPress blog, featuring daily yoga tips curated from around the web.
+            A custom built WordPress blog, featuring daily yoga tips curated from around the web.
           </p>
           <a href="#" class="btn btn-portfolio-readmore">Visit the website  <i class="fa fa-external-link"></i></a>
         </div>
@@ -58,19 +65,19 @@
           <div class="row">
             <div class="col-lg-12">
               <!-- project image -->
-              <img src="/images/yoga-daily.png" class="thumbnail-outlined">
+              <img src="images/yoga-daily.png" class="thumbnail-outlined">
 
               <section class="the-facts">
                 <h3>Quick Facts</h3>
                 <ol>
                   <li>
-                    The outdated WordPress website was in need for a new look -- total project time: 3 months
-                  </li>
-                  <li>
                     Atque pariatur excepturi necessitatibus alias cupiditate, earum deserunt aspernatur sun
                   </li>
                   <li>
-                    Following the website redesign, domain authority increased by 7 points and average time spent on a page increased from 1 minute and 30 seconds to 2 minutes and 30 seconds.
+                    Since the site has gone live, I have seen 25% increase in traffic month over month.
+                  </li>
+                  <li>
+                    Despite it being a passion project, building the blog from the bottom taught me about creating custom post types in WordPress, trouble shooting cross browser compatibility issues, and more.
                   </li>
                 </ol>
               </section>
@@ -78,7 +85,7 @@
               <section class="task">
                 <h3>The task</h3>
                 <p>
-                  Yoga daily is...
+                  Yoga Daily is a WordPress blog I created, inspired by ___. Something else here about why Yoga is a passion of mine, even though I do not like yoga.
                 </p>
                 
               </section>
@@ -88,21 +95,22 @@
                 <!-- image showing the process -->
                 <img src="http://placehold.it/750x350" class="img-responsive">
                 <p>
-                  In order to refresh the site, I took on a __ step approach.
+                  In order to build the Yoga Daily Blog from the ground up, here's what I did:
                 </p>
                 <ol>
                   <li>
-                    Website and content analysis - the front-end, backend, and site architecture
+                    <strong>Brainstorming</strong> - What do I want to achieve with my site? How will I accomplish this through my development/design choices?
                   </li>
                   <li>
-                    As I redesigned the WordPress theme, I made it responsive. But also added in important Schema markup to make the site SEO optimized 
+                    <strong>Content architecture</strong> - How will the content exist on the site?
                   </li>
                   <li>
-                    Later added in appropriate meta titles and descriptions
+                    <strong>Mockups</strong> - Loosely getting an idea of the key components of the site
                   </li>
                   <li>
-                    Got the site hosted with a better provider, VPS, makes site go faster. Set up static assets on a CDN to help with speed. 
+                    <strong>Development</strong> - Building out the custom WordPress theme, using the Bootstrap framework. Also adding SEO-friendly markup to the code.
                   </li>
+                  <li><strong>Production</strong> - Getting the Yoga Daily blog live on the internet so the world could see</li>
                 </ol>
                
               </section>
@@ -111,15 +119,16 @@
                 <h3>Outcome</h3>
                  <img src="http://placehold.it/750x350" class="img-responsive">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, suscipit, magnam? Ad, excepturi esse laudantium corrupti autem reprehenderit quidem, sit nesciunt tenetur labore, odio temporibus. Qui voluptates est repellat, aperiam.
+                  Since I first began the site in April 2015, I have seen a 25% increase in page traffic month over month. While the blog may be a passion project, building it from the bottom taught me a lot. 
                 </p>
+                <p>Including:</p>
                 <ol>
-                  <li>Average 10 new email subsribers per day</li>
+                  <li><strong>Custom post types </strong>- Which I created for my guest contributers</li>
                   <li>
-                    50,000 pageviews a month
+                    <strong>Troubleshooting cross browswer compatibility</strong> - A few of my design choices did not play nicely across some browsers. This gave me the chance to learn more about making a site look seamless across all web browsers.
                   </li>
                   <li>
-                    Tina Brown reports that the number of leads increased as well
+                    <strong>Git and Github</strong> - This was first opportunitiy I had to use Git and Github while creating a project of my own. 
                   </li>
                 </ol>
               </section>
@@ -134,13 +143,12 @@
         </div><!--case-study-->
 
         <div class="footer text-center">
-          <p>Questions? Email me at laura@laurabradshaw.com</p>
-          <ul class="list-inline">
-            <li><i class="fa fa-linkedin fa-lg"></i></li>
-            <li><i class="fa fa-github fa-lg"></i></li>
-            <li><i class="fa fa-twitter fa-lg"></i></li>
-          </ul>
-        </div>
+        <p>Questions? Email me at laura@laurabradshaw.com</p>
+        <ul class="list-inline">
+          <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+        </ul>
       </div>
     </div>
     
