@@ -1,6 +1,8 @@
-#Example Portfolio Site
+# Demo Portfolio Site
 
-For Portfolio Dojo Online Course
+For the Portfolio Dojo online course.[Find out more about the course here.](http://www.portfoliodojo.com)
 
-[Find out more here.](http://www.portfoliodojo.com)
+Note: all code for the live demo portfolio site can be found in the **app** directory. 
+
+
 
